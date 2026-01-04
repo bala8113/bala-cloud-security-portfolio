@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teegala Bala Sai Kumar | Cloud Security Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Cloud · Security · Azure</span>
+      <h1>Teegala Bala Sai Kumar</h1>
+      <h2>Microsoft Cloud Security Engineer</h2>
+
+      <p class="hero-summary">
+        Securing Azure & AWS environments using Microsoft Defender, SIEM/SOAR and enterprise-grade security governance. </p>
+
+      <div class="hero-actions">
+        <a href="mailto:balasai113@gmail.com">balasai113@gmail.com</a>
+        <a href="tel:+919063626737">+91 90636 #####</a>
+        <a href="https://linkedin.com/in/balasaiteegala" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PROFILE SUMMARY -->
+    <section class="card">
+      <h3>Profile Summary</h3>
+      <p>
+        Microsoft Cloud Security Engineer with 6+ years of experience securing and governing
+        enterprise Azure and AWS environments. Strong expertise in Microsoft Defender for Cloud,
+        Microsoft Sentinel (SIEM), and Microsoft Entra ID, with proven success in achieving
+        HIPAA/HITRUST audit readiness. Experienced in Zero Trust architecture, Azure Policy
+        enforcement, and SOC operations.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="card">
+      <h3>Professional Experience</h3>
+
+      <div class="job">
+        <h4>Cloud Security Engineer – Tech Star India Pvt Ltd</h4>
+        <span class="duration">Feb 2025 – Present</span>
+        <ul>
+          <li>Configured Microsoft Sentinel analytics rules mapped to MITRE ATT&CK.</li>
+          <li>Remediated Defender for Cloud CSPM recommendations.</li>
+          <li>Integrated Defender XDR, Identity, Office 365, and Cloud Apps.</li>
+          <li>Implemented Azure Policy for governance and compliance.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Senior Technology Consultant – Ernst & Young (EY)</h4>
+        <span class="duration">May 2024 – Aug 2024</span>
+        <ul>
+          <li>Performed enterprise cloud security risk assessments using Zero Trust principles.</li>
+          <li>Supported incident investigations and remediation.</li>
+          <li>Conducted IAM security assessments.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Senior Cloud Engineer – Genzeon Technology</h4>
+        <span class="duration">Apr 2023 – May 2024</span>
+        <ul>
+          <li>Implemented Defender for Cloud and CloudWatch monitoring.</li>
+          <li>Performed vulnerability assessments across Azure services.</li>
+          <li>Deployed infrastructure using Terraform and Bicep.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Senior Systems Analyst – Sonata Information Technology</h4>
+        <span class="duration">Dec 2021 – Apr 2023</span>
+        <ul>
+          <li>Reduced cloud costs by 40% through optimization.</li>
+          <li>Managed Azure VMs, IAM, and patching.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Cloud Associate – Accenture</h4>
+        <span class="duration">Apr 2019 – Jun 2021</span>
+        <ul>
+          <li>Maintained cloud infrastructure and resolved incidents.</li>
+          <li>Supported enterprise IT security operations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Cloud Linux Engineer – Genpact</h4>
+        <span class="duration">Nov 2017 – Mar 2019</span>
+        <ul>
+          <li>Managed Linux servers and provided L2/L3 support.</li>
+          <li>Handled backup, recovery, and availability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="card">
+      <h3>Technical Skills</h3>
+
+      <div class="skills-grid">
+        <div class="skill-tile" onclick="openModal('cloud')">☁️ Cloud Platforms & Security</div>
+        <div class="skill-tile" onclick="openModal('microsoft')">🛡 Microsoft Security Stack</div>
+        <div class="skill-tile" onclick="openModal('siem')">📊 SIEM, Monitoring & Detection</div>
+        <div class="skill-tile" onclick="openModal('grc')">📜 Governance, Risk & Compliance</div>
+        <div class="skill-tile" onclick="openModal('threat')">🚨 Threat & Vulnerability Management</div>
+        <div class="skill-tile" onclick="openModal('automation')">⚙️ Automation & IAM</div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+        <li>Microsoft Certified: Azure Network Engineer Associate (AZ-700)</li>
+      </ul>
+    </section>
+
+    <!-- Notable Achievements -->
+    <section class="card">
+      <h3>Notable Achievements</h3>
+      <ul>
+        <li>Reduced incident response times by 35% through optimized security operations and proactive 
+threat detection. </li>
+        <li>Achieved 100% HIPAA/HITRUST audit readiness, demonstrating strong compliance and 
+security posture. </li>
+        <li>Drove a 40% reduction in cloud costs through strategic secure optimization and efficient 
+resource utilization.</li>
+        <li>Engineered scalable, compliant, and resilient cloud security solutions across multi-subscription 
+environments.</li>
+      </ul>  
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card">
+      <h3>Education</h3>
+      <p>B.Tech – Mechanical Engineering, Vignan’s University (2013 – 2017)</p>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <span class="close" onclick="closeModal()">×</span>
+      <h3 id="modalTitle"></h3>
+      <ul id="modalList"></ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Teegala Bala Sai Kumar
+  </footer>
+
+  <script>
+    const skills = {
+      cloud: { title: "Cloud Platforms & Security", items: [
+        "Microsoft Azure (Security & Governance)",
+        "Amazon Web Services (AWS Security)",
+        "Cloud Security Architecture",
+        "Zero Trust Security Model",
+        "Secure Landing Zone Design"
+      ]},
+      microsoft: { title: "Microsoft Security Stack", items: [
+        "Defender for Cloud (CSPM, CWPP)",
+        "Microsoft Sentinel (SIEM, SOAR)",
+        "Microsoft Entra ID (Azure AD, IAM)",
+        "Defender XDR",
+        "Defender for Identity",
+        "Defender for Office 365",
+        "Defender for Cloud Apps (CASB)"
+      ]},
+      siem: { title: "SIEM, Monitoring & Detection", items: [
+        "SIEM & SOAR",
+        "KQL",
+        "Log Analytics Workspace",
+        "Azure Monitor & Diagnostic Settings",
+        "MITRE ATT&CK Mapping"
+      ]},
+      grc: { title: "Governance, Risk & Compliance", items: [
+        "Azure Policy (Audit, Deny, DeployIfNotExists)",
+        "HIPAA & HITRUST Compliance",
+        "NIST & CIS Benchmarks",
+        "Secure Score & Posture Management",
+        "Identity Governance & PIM"
+      ]},
+      threat: { title: "Threat & Vulnerability Management", items: [
+        "Vulnerability Assessment & Remediation",
+        "Secure Configuration & Hardening",
+        "Patch Management & Risk Mitigation",
+        "Incident Response",
+        "Root Cause Analysis"
+      ]},
+      automation: { title: "Automation & IAM", items: [
+        "Logic Apps (Security Automation)",
+        "Terraform & Bicep (IaC)",
+        "RBAC, Conditional Access, MFA",
+        "Least Privilege Enforcement"
+      ]}
+    };
+
+    function openModal(key) {
+      document.getElementById("modalTitle").innerText = skills[key].title;
+      const list = document.getElementById("modalList");
+      list.innerHTML = "";
+      skills[key].items.forEach(i => {
+        const li = document.createElement("li");
+        li.textContent = i;
+        list.appendChild(li);
+      });
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function closeModal(e) {
+      if (!e || e.target.classList.contains("modal") || e.target.classList.contains("close")) {
+        document.getElementById("modal").style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
